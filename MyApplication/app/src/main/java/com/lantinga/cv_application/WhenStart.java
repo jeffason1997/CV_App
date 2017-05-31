@@ -1,5 +1,7 @@
 package com.lantinga.cv_application;
 
+import com.lantinga.cv_application.Objects.Study;
+
 import java.util.ArrayList;
 
 /**
@@ -9,16 +11,16 @@ import java.util.ArrayList;
 public class WhenStart {
 
     ArrayList<SubPages> pages = new ArrayList<>();
-    ArrayList<SubPages> Opleidingen = new ArrayList<>();
+    ArrayList<Study> studies = new ArrayList<>();
 
     public WhenStart(){
-        pages.add(new SubPages("Personalia"));
-        pages.add(new SubPages("Opleidingen"));
-        pages.add(new SubPages("Werkervaring"));
-        pages.add(new SubPages("Mijn Projecten"));
-        pages.add(new SubPages("Cursussen en ervaringen"));
-        Opleidingen.add(new SubPages("VMBO-tl/MAVO"));
-        Opleidingen.add(new SubPages("HAVO"));
+        pages.add(new SubPages(R.string.Personalia));
+        pages.add(new SubPages(R.string.Studies));
+        pages.add(new SubPages(R.string.Experiance));
+        pages.add(new SubPages(R.string.Pojects));
+        pages.add(new SubPages(R.string.CoursAndSkill));
+        studies.add(new Study("VMBO-tl/MAVO"));
+        studies.add(new Study("HAVO"));
 
 
 

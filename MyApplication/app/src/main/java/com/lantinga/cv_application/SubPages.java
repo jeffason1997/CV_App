@@ -8,14 +8,14 @@ import java.io.Serializable;
 
 public class SubPages implements Serializable {
 
-    String pageName;
+    int pageName;
 
-    public SubPages(String pageName) {
+    public SubPages(int pageName) {
         this.pageName = pageName;
     }
 
 
-    public String getPageName(){
+    public int getPageName(){
         return pageName;
     }
 }
