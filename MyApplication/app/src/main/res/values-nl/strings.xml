@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CV_Application</string>
-    <string name="ContactGegevens">Naam: Jeffrey Lantinga
-        \nTel.Nummer: +31 6 34929520
+    <string name="ContactGegevens"><dimen name="font_size">16sp</dimen>Naam: Jeffrey Lantinga
+        \n\nTel.Nummer: +31 6 34929520
         \nEmail: jeffreylantinga@hotmail.com
         \nLinkedIn: /in/jeffreylantinga/</string>
 </resources>

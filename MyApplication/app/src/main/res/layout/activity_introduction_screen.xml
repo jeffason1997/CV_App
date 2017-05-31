@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/picOfJeff"
-        android:layout_width="86dp"
-        android:layout_height="83dp"
+        android:layout_width="85dp"
+        android:layout_height="137dp"
         app:srcCompat="@android:color/background_dark"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
@@ -19,9 +19,9 @@
 
     <TextView
         android:id="@+id/infoOfJeff"
-        android:layout_width="281dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="277dp"
+        android:layout_height="137dp"
+        android:layout_marginLeft="14dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/ContactGegevens"
