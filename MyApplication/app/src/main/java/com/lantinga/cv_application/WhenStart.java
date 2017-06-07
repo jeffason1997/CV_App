@@ -1,6 +1,8 @@
 package com.lantinga.cv_application;
 
+import com.lantinga.cv_application.Objects.ListItem;
 import com.lantinga.cv_application.Objects.Study;
+import com.lantinga.cv_application.Objects.SubPages;
 
 import java.util.ArrayList;
 
@@ -10,27 +12,30 @@ import java.util.ArrayList;
 
 public class WhenStart {
 
-    ArrayList<SubPages> pages = new ArrayList<>();
-    ArrayList<Study> studies = new ArrayList<>();
+    ArrayList<ListItem> pages = new ArrayList<>();
+    ArrayList<ListItem> studies = new ArrayList<>();
 
     public WhenStart(){
+        studies.add(new Study(R.string.Mavo));
+        studies.add(new Study(R.string.Havo));
+
+
+
+
+
+
         pages.add(new SubPages(R.string.Personalia));
-        pages.add(new SubPages(R.string.Studies));
+        pages.add(new SubPages(R.string.Studies,studies));
         pages.add(new SubPages(R.string.Experiance));
         pages.add(new SubPages(R.string.Pojects));
         pages.add(new SubPages(R.string.CoursAndSkill));
-        studies.add(new Study("VMBO-tl/MAVO"));
-        studies.add(new Study("HAVO"));
-
-
-
     }
 
-    public ArrayList<SubPages> getPages() {
+    public ArrayList<ListItem> getPages() {
         return pages;
     }
 
-    public void setPages(ArrayList<SubPages> pages) {
+    public void setPages(ArrayList<ListItem> pages) {
         this.pages = pages;
     }
 

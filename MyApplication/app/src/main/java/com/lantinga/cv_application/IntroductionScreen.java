@@ -1,6 +1,7 @@
 package com.lantinga.cv_application;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,11 +10,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.lantinga.cv_application.Objects.ListItem;
+import com.lantinga.cv_application.Objects.SubPages;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class IntroductionScreen extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    ArrayList<SubPages> pages = new ArrayList<>();
+    ArrayList<ListItem> pages = new ArrayList<>();
     ListView listView;
     ArrayAdapter adapter;
 

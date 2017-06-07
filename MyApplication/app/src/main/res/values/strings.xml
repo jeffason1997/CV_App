@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CV_Application</string>
-    <string name="ContactGegevens">Name: Jeffrey Lantinga
-        \nPhonenumber: +31 6 34929520
+    <string name="ContactGegevens">Jeffrey Lantinga
+        \n\nPhonenumber: +31 6 34929520
         \nEmail: jeffreylantinga@hotmail.com
         \nLinkedIn: /in/jeffreylantinga/</string>
     <string name="Personalia">Personalia</string>
@@ -9,6 +9,8 @@
     <string name="Experiance">Experiance</string>
     <string name="Pojects">My projects</string>
     <string name="CoursAndSkill">Courses and skills</string>
+    <string name="Havo">Havo</string>
+    <string name="Mavo">Mavo</string>
 
 
 </resources>

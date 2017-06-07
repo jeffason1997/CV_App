@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.lantinga.cv_application.Objects.ListItem;
+import com.lantinga.cv_application.Objects.SubPages;
 
 import java.util.ArrayList;
 
@@ -18,22 +20,22 @@ import java.util.ArrayList;
 
 public class IntroductionAdapter extends ArrayAdapter {
 
-    public IntroductionAdapter(@NonNull Context context, ArrayList<SubPages> pages ) {
-        super(context,0,pages);
+    public IntroductionAdapter(@NonNull Context context, ArrayList<ListItem> array ) {
+        super(context,0,array);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        SubPages pages = (SubPages) getItem(position);
+        ListItem pages = (ListItem) getItem(position);
 
         if(convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.rows_listview, parent, false);
         }
 
         TextView pageName = (TextView) convertView.findViewById(R.id.listviewName);
-        pageName.setText(pages.getPageName());
+        pageName.setText(pages.getName());
 
         return convertView;
     }

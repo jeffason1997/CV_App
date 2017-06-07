@@ -1,21 +1,14 @@
 package com.lantinga.cv_application.Objects;
 
+import java.io.Serializable;
+
 /**
  * Created by jeffrey on 31-5-2017.
  */
 
-public class Study {
-    String name;
+public class Study extends ListItem implements Serializable{
 
-    public Study(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public Study(int name) {
+        super(name);
     }
 }
