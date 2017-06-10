@@ -8,9 +8,11 @@ import java.io.Serializable;
 
 public class ListItem implements Serializable {
     int name;
+    int IMG;
 
-    public ListItem(int name) {
+    public ListItem(int name, int IMG) {
         this.name = name;
+        this.IMG = IMG;
     }
 
     public int getName() {
@@ -19,5 +21,13 @@ public class ListItem implements Serializable {
 
     public void setName(int name) {
         this.name = name;
+    }
+
+    public int getIMG() {
+        return IMG;
+    }
+
+    public void setIMG(int IMG) {
+        this.IMG = IMG;
     }
 }

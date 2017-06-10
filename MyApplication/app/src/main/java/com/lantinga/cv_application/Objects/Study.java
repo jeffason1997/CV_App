@@ -9,6 +9,6 @@ import java.io.Serializable;
 public class Study extends ListItem implements Serializable{
 
     public Study(int name) {
-        super(name);
+        super(name,0);
     }
 }

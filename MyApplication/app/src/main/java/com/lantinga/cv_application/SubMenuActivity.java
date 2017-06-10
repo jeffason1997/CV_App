@@ -53,7 +53,7 @@ public class SubMenuActivity extends AppCompatActivity implements AdapterView.On
         System.out.println("message" + i);
 
         ListItem item = items.get(i);
-        Intent intent = new Intent(getApplicationContext(),ProjectActivity.class);
+        Intent intent = new Intent(getApplicationContext(),DetailedActivity.class);
         intent.putExtra("ITEM",item);
         startActivity(intent);
     }

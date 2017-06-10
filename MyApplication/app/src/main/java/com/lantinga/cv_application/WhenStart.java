@@ -27,11 +27,11 @@ public class WhenStart {
 //        experiences.add(new Experience());
 
 
-        projects.add(new Project(R.string.WeerStation));
-        projects.add(new Project(R.string.FestivalPlanner));
-        projects.add(new Project(R.string.KidSecure));
-        projects.add(new Project(R.string.CVApp));
-        projects.add(new Project(R.string.VacationApp));
+        projects.add(new Project(R.string.WeerStation,1));
+        projects.add(new Project(R.string.FestivalPlanner,1));
+        projects.add(new Project(R.string.KidSecure,1));
+        projects.add(new Project(R.string.CVApp,1));
+        projects.add(new Project(R.string.VacationApp,R.drawable.a_pic_of_me));
 
 
 
