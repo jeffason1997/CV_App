@@ -1,7 +1,6 @@
 package com.lantinga.cv_application;
 
 import android.content.Intent;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,10 +12,9 @@ import android.widget.ListView;
 import com.lantinga.cv_application.Objects.ListItem;
 import com.lantinga.cv_application.Objects.SubPages;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
-public class IntroductionScreen extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     ArrayList<ListItem> pages = new ArrayList<>();
     ListView listView;
@@ -25,7 +23,7 @@ public class IntroductionScreen extends AppCompatActivity implements AdapterView
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_introduction_screen);
+        setContentView(R.layout.activity_main);
 
         WhenStart whenStart = new WhenStart();
         pages = whenStart.getPages();
@@ -41,9 +39,9 @@ public class IntroductionScreen extends AppCompatActivity implements AdapterView
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+        System.out.println(i);
         SubPages page = (SubPages) pages.get(i);
-        Intent intent = new Intent(getApplicationContext(),SubMenuScreen.class);
+        Intent intent = new Intent(getApplicationContext(),SubMenuActivity.class);
         intent.putExtra("SUB_PAGE",page);
         startActivity(intent);
     }

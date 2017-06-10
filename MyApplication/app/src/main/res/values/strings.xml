@@ -6,11 +6,16 @@
         \nLinkedIn: /in/jeffreylantinga/</string>
     <string name="Personalia">Personalia</string>
     <string name="Studies">Studies</string>
-    <string name="Experiance">Experiance</string>
+    <string name="Experience">Experience</string>
     <string name="Pojects">My projects</string>
     <string name="CoursAndSkill">Courses and skills</string>
     <string name="Havo">Havo</string>
     <string name="Mavo">Mavo</string>
+    <string name="WeerStation">WheaterStation</string>
+    <string name="FestivalPlanner">2D Festival Simulation</string>
+    <string name="KidSecure">KidSecure Android App</string>
+    <string name="VacationApp">Vacation Android App</string>
+    <string name="CVApp">CV Android App</string>
 
 
 </resources>

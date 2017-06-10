@@ -2,16 +2,21 @@
 <resources>
     <string name="app_name">CV_Application</string>
     <string name="ContactGegevens">Jeffrey Lantinga
-        \n+31 6 34929520
+        \n\n+31 6 34929520
         \njeffreylantinga@hotmail.com
         \nlinkedin.nl/in/jeffreylantinga/</string>
     <string name="Personalia">Personalia</string>
     <string name="Studies">Opleidingen</string>
-    <string name="Experiance">Werkervaring</string>
+    <string name="Experience">Werkervaring</string>
     <string name="Pojects">Mijn projecten</string>
     <string name="CoursAndSkill">Cursussen en vaardigheden</string>
     <string name="Havo">Havo</string>
     <string name="Mavo">Mavo</string>
+    <string name="WeerStation">Weerstation</string>
+    <string name="FestivalPlanner">2D Festival Simulatie</string>
+    <string name="KidSecure">KidSecure Android App</string>
+    <string name="VacationApp">Vakantie Android App</string>
+    <string name="CVApp">CV Android App</string>
 
 
 </resources>

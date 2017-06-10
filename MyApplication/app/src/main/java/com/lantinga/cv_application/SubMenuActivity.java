@@ -5,31 +5,31 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
+import com.lantinga.cv_application.Objects.ListItem;
 import com.lantinga.cv_application.Objects.SubPages;
 
-import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by Jeffrey on 16-5-2017.
  */
 
-public class SubMenuScreen extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class SubMenuActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView listView;
     private ArrayAdapter adapter;
+    private ArrayList<ListItem> items;
     private SubPages page;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_introduction_screen);
+        setContentView(R.layout.activity_main);
 
         ImageView image = (ImageView) findViewById(R.id.picOfJeff);
         image.setImageDrawable(getResources().getDrawable(R.drawable.a_pic_of_me));
@@ -39,7 +39,8 @@ public class SubMenuScreen extends AppCompatActivity implements AdapterView.OnIt
 
         listView = (ListView) findViewById(R.id.allMenus);
         Log.i("message", listView.toString());
-        adapter = new IntroductionAdapter(this.getApplicationContext(),page.getContent());
+        items = page.getContent();
+        adapter = new IntroductionAdapter(this.getApplicationContext(),items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
 
@@ -47,8 +48,13 @@ public class SubMenuScreen extends AppCompatActivity implements AdapterView.OnIt
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent = new Intent(getApplicationContext(),SubMenuScreen.class);
+    public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+        Log.i("message", items.toString());
+        System.out.println("message" + i);
+
+        ListItem item = items.get(i);
+        Intent intent = new Intent(getApplicationContext(),ProjectActivity.class);
+        intent.putExtra("ITEM",item);
         startActivity(intent);
     }
 }
