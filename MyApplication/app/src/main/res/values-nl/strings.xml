@@ -18,5 +18,7 @@
     <string name="VacationApp">Vakantie Android App</string>
     <string name="CVApp">CV Android App</string>
 
+    <string name="WeerstationInfo">Bij dit Java project moesten we verbinding maken met een weerstation database.
+        vervolgens moesten wij de ruwe data uit de database omzetten naar bruikbare informatie en dit weergeven in een GUI.</string>
 
 </resources>

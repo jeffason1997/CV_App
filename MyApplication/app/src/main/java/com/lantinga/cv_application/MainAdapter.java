@@ -18,24 +18,24 @@ import java.util.ArrayList;
  * Created by Jeffrey on 16-5-2017.
  */
 
-public class IntroductionAdapter extends ArrayAdapter {
+public class MainAdapter extends ArrayAdapter {
 
-    public IntroductionAdapter(@NonNull Context context, ArrayList<ListItem> array ) {
-        super(context,0,array);
-    }
+    public MainAdapter(@NonNull Context context, ArrayList<SubPages> array ) {
+    super(context,0,array);
+}
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        ListItem pages = (ListItem) getItem(position);
+        SubPages pages = (SubPages) getItem(position);
 
         if(convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.rows_listview, parent, false);
         }
 
         TextView pageName = (TextView) convertView.findViewById(R.id.listviewName);
-        pageName.setText(pages.getName());
+        pageName.setText(pages.getPageName());
 
         return convertView;
     }

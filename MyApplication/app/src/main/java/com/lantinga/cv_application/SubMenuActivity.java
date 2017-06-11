@@ -40,7 +40,7 @@ public class SubMenuActivity extends AppCompatActivity implements AdapterView.On
         listView = (ListView) findViewById(R.id.allMenus);
         Log.i("message", listView.toString());
         items = page.getContent();
-        adapter = new IntroductionAdapter(this.getApplicationContext(),items);
+        adapter = new DetailedAdapter(this.getApplicationContext(),items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
 

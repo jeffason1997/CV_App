@@ -5,7 +5,7 @@ package com.lantinga.cv_application.Objects;
  */
 
 public class Experience extends ListItem {
-    public Experience(int name) {
-        super(name,0);
+    public Experience(int name, int text) {
+        super(name,0,text);
     }
 }

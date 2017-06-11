@@ -10,17 +10,30 @@ import java.util.ArrayList;
  * Created by Jeffrey on 16-5-2017.
  */
 
-public class SubPages extends ListItem implements Serializable {
+public class SubPages implements Serializable {
 
+    int pageName;
     private ArrayList content;
 
     public SubPages(int pageName, ArrayList arraylist) {
-        super(pageName,0);
+        this.pageName = pageName;
         content = arraylist;
     }
 
     public SubPages(int pageName) {
-        super(pageName,0);
+        this.pageName=pageName;
+    }
+
+    public int getPageName() {
+        return pageName;
+    }
+
+    public void setPageName(int pageName) {
+        this.pageName = pageName;
+    }
+
+    public void setContent(ArrayList content) {
+        this.content = content;
     }
 
     public ArrayList getContent() {

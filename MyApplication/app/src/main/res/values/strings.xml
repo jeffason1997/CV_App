@@ -17,5 +17,8 @@
     <string name="VacationApp">Vacation Android App</string>
     <string name="CVApp">CV Android App</string>
 
+    <string name="WeerstationInfo">In this Java project we had connection with a wheaterstation database.
+    We converted the information form the database to usable information and putted this in an GUI. </string>
+
 
 </resources>

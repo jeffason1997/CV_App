@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    ArrayList<ListItem> pages = new ArrayList<>();
+    ArrayList<SubPages> pages = new ArrayList<>();
     ListView listView;
     ArrayAdapter adapter;
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         pages = whenStart.getPages();
 
         listView = (ListView) findViewById(R.id.allMenus);
-        adapter = new IntroductionAdapter(this.getApplicationContext(), pages);
+        adapter = new MainAdapter(this.getApplicationContext(), pages);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
 

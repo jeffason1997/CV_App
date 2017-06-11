@@ -7,7 +7,7 @@ package com.lantinga.cv_application.Objects;
 
 public class Project extends ListItem {
 
-    public Project(int name,int IMG) {
-        super(name,IMG);
+    public Project(int name,int IMG, int text) {
+        super(name,IMG,text);
     }
 }

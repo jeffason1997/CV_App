@@ -14,24 +14,24 @@ import java.util.ArrayList;
 
 public class WhenStart {
 
-    ArrayList<ListItem> pages = new ArrayList<>();
+    ArrayList<SubPages> pages = new ArrayList<>();
     ArrayList<ListItem> studies = new ArrayList<>();
     ArrayList<ListItem> experiences = new ArrayList<>();
     ArrayList<ListItem> projects = new ArrayList<>();
 
     public WhenStart(){
-        studies.add(new Study(R.string.Mavo));
-        studies.add(new Study(R.string.Havo));
+        studies.add(new Study(R.string.Mavo,0));
+        studies.add(new Study(R.string.Havo,0));
 
 //        experiences.add(new Experience());
 //        experiences.add(new Experience());
 
 
-        projects.add(new Project(R.string.WeerStation,1));
-        projects.add(new Project(R.string.FestivalPlanner,1));
-        projects.add(new Project(R.string.KidSecure,1));
-        projects.add(new Project(R.string.CVApp,1));
-        projects.add(new Project(R.string.VacationApp,R.drawable.a_pic_of_me));
+        projects.add(new Project(R.string.WeerStation,R.drawable.weerstation,R.string.WeerstationInfo));
+        projects.add(new Project(R.string.FestivalPlanner,1,0));
+        projects.add(new Project(R.string.KidSecure,1,0));
+        projects.add(new Project(R.string.CVApp,1,0));
+        projects.add(new Project(R.string.VacationApp,R.drawable.a_pic_of_me,0));
 
 
 
@@ -45,11 +45,11 @@ public class WhenStart {
         pages.add(new SubPages(R.string.CoursAndSkill));
     }
 
-    public ArrayList<ListItem> getPages() {
+    public ArrayList<SubPages> getPages() {
         return pages;
     }
 
-    public void setPages(ArrayList<ListItem> pages) {
+    public void setPages(ArrayList<SubPages> pages) {
         this.pages = pages;
     }
 

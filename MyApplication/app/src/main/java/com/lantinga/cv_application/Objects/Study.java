@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class Study extends ListItem implements Serializable{
 
-    public Study(int name) {
-        super(name,0);
+    public Study(int name, int text) {
+        super(name,0,text);
     }
 }
